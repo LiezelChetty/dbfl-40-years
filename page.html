@@ -14,7 +14,6 @@
   <main id="pageRoot"></main>
   <footer class="dbfl-footer"><img src="assets/logos/dbfl-40-white.svg" alt="DBFL"><p>DBFL website concept for internal review.</p></footer>
   <script src="js/content-store.js"></script>
-  <script src="js/team-directory.js"></script>
   <script>
     const slug=new URLSearchParams(location.search).get('slug')||'about-us';
     const data=DBFLContent.load();
@@ -25,7 +24,6 @@
     }else{
       document.title=page.title+' | DBFL';
       root.innerHTML=`<section class="page-hero"><p class="kicker">${DBFLContent.escape(page.eyebrow)}</p><h1>${DBFLContent.escape(page.title)}</h1></section><div class="article-wrap"><article class="article-body"><p class="lead">${DBFLContent.escape(page.intro)}</p>${page.body}</article><aside class="article-aside"><p class="kicker">Explore DBFL</p>${data.pages.filter(p=>p.status==='published').map(p=>`<a href="page.html?slug=${encodeURIComponent(p.slug)}">${DBFLContent.escape(p.title)}</a>`).join('')}<a href="index.html">40 Years</a></aside></div>`;
-      if(slug==='our-team'&&window.DBFLTeam) window.DBFLTeam.render();
     }
   </script>
 </body>
