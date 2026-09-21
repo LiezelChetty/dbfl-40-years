@@ -44,7 +44,7 @@ const timelineData = {
     title: 'The practice that came before',
     text: 'Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler were junior partners in Stanislaus Kenny & Partners from the early 1980s.',
     archive: 'Major work included the £40 million Wheatfield works and prison contract, one of the country’s largest projects at the time.',
-    image: 'assets/images/office-merrion-square.jpg',
+    image: 'assets/images/office-merrion-square.jpg?v=2',
     imageLabel: 'The story starts before 1987'
   },
   1987: {
