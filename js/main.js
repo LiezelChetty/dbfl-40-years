@@ -53,7 +53,7 @@ const timelineData = {
     title: 'DBFL is founded',
     text: 'Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler established a new practice after the partners of Stanislaus Kenny & Partners chose to separate.',
     archive: 'The first office occupied a rented floor at 55 Merrion Square. Money was tight, and the founders had to knock on doors to win work.',
-    image: 'assets/images/founders-1987.png',
+    image: 'assets/images/founders-1987.jpg',
     imageLabel: 'The four founders'
   },
   1997: {
