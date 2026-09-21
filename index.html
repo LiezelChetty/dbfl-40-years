@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DBFL 40 Years anniversary microsite concept." />
+  <title>DBFL 40 Years</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="DBFL 40 Years home">
+      <img src="assets/logos/dbfl-40-white.svg" alt="DBFL 40 Years" />
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#story">Our Story</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#people">People</a>
+      <a href="#future">Looking Forward</a>
+      <a href="dbfl.html">DBFL Website</a>
+      <a class="nav-admin" href="admin.html">Editor Demo</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#story">Our Story</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#projects">Projects</a>
+    <a href="#people">People</a>
+    <a href="#future">Looking Forward</a>
+    <a href="dbfl.html">DBFL Website</a>
+    <a href="admin.html">Editor Demo</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-label="DBFL 40 Years hero slider">
+      <article class="slide is-active" data-slide="0" style="--bg:url('../assets/images/hero-rosslare.jpg')">
+        <div class="slide-shade"></div>
+        <div class="slide-content">
+          <p class="eyebrow">Celebrating 40 Years</p>
+          <h1>Engineering<br>Sustainable Futures</h1>
+          <p class="lead">For four decades DBFL has helped shape communities through innovative engineering, trusted partnerships and sustainable design.</p>
+          <a class="button" href="#story">Explore Our Story</a>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="1" style="--bg:url('../assets/images/hero-brand-launch.jpg')">
+        <div class="slide-shade"></div>
+        <div class="slide-content">
+          <p class="eyebrow">Four Decades of Expertise</p>
+          <h2>Our People</h2>
+          <p class="lead">The people behind four decades of engineering excellence.</p>
+          <a class="button" href="#people">Meet the Team</a>
+        </div>
+      </article>
+
+      <article class="slide" data-slide="2" style="--bg:url('../assets/images/hero-steven.jpg')">
+        <div class="slide-shade"></div>
+        <div class="slide-content">
+          <p class="eyebrow">Built on Collaboration</p>
+          <h2>Our Projects</h2>
+          <p class="lead">Celebrating the projects that have helped shape Ireland.</p>
+          <a class="button" href="#projects">View Landmark Projects</a>
+        </div>
+      </article>
+
+      <div class="hero-tabs" aria-label="Choose slide">
+        <button class="hero-tab is-active" data-go="0"><span>01</span>40 Years</button>
+        <button class="hero-tab" data-go="1"><span>02</span>Our People</button>
+        <button class="hero-tab" data-go="2"><span>03</span>Our Projects</button>
+      </div>
+
+      <div class="hero-controls">
+        <button id="prevSlide" aria-label="Previous slide">←</button>
+        <div class="dots" aria-label="Slider pagination">
+          <button class="dot is-active" data-go="0" aria-label="Slide 1"></button>
+          <button class="dot" data-go="1" aria-label="Slide 2"></button>
+          <button class="dot" data-go="2" aria-label="Slide 3"></button>
+        </div>
+        <button id="nextSlide" aria-label="Next slide">→</button>
+      </div>
+
+      <a class="scroll-cue" href="#story" aria-label="Scroll to Our Story"><span></span>Scroll</a>
+    </section>
+
+    <section class="history-intro section" aria-labelledby="historyIntroTitle">
+      <div class="history-stat reveal">
+        <strong>40</strong>
+        <span>Years of engineering sustainable futures</span>
+      </div>
+      <div class="history-intro-copy reveal">
+        <p class="eyebrow dark">Our History</p>
+        <h2 id="historyIntroTitle">A story shaped by people, projects and progress.</h2>
+        <p>DBFL began with four founders in 1987. Today, the practice brings together more than 200 people across Dublin, Waterford, Cork and Galway.</p>
+        <div class="history-themes">
+          <article><span>01</span><h3>Four founders</h3><p>Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler established DBFL during a difficult period for the industry.</p></article>
+          <article><span>02</span><h3>Four locations</h3><p>The Dublin practice grew into a national presence with offices in Waterford, Cork and Galway.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-number">01</div>
+      <div class="story-year reveal">1987</div>
+      <div class="story-copy reveal founder-story">
+        <p class="eyebrow dark">Where It All Began</p>
+        <h2>Four partners. One new practice.</h2>
+        <p class="body-copy">Following the passing of Stan Kenny and a sharp reduction in workload during the 1980s recession, four junior partners from Stanislaus Kenny &amp; Partners chose to establish their own practice. DBFL began on a rented floor at 55 Merrion Square, where every partner took responsibility for finding work and remaining directly available to clients.</p>
+        <figure class="founder-photo"><img src="assets/images/founders-1987.png" alt="DBFL founders Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler"><figcaption>Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="legacy-numbers" aria-label="DBFL growth in numbers">
+      <div class="legacy-number reveal"><strong data-count="4">4</strong><span>Founders</span></div>
+      <div class="legacy-number reveal"><strong data-count="4">4</strong><span>Offices</span></div>
+      <div class="legacy-number reveal"><strong data-count="40">40</strong><span>Years in 2027</span></div>
+      <div class="legacy-number reveal"><strong data-count="200">200+</strong><span>People</span></div>
+    </section>
+
+    <section class="timeline-section section" id="timeline">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">Explore Our Journey</p>
+        <h2>Move through the DBFL story.</h2>
+        <p class="body-copy">Select a milestone to explore the people, places and projects that shaped the practice.</p>
+      </div>
+
+      <div class="interactive-timeline reveal" data-timeline>
+        <div class="timeline-years" role="tablist" aria-label="DBFL history by decade">
+          <button class="timeline-year is-active" role="tab" aria-selected="true" aria-controls="timelinePanel" data-year="pre1987">Before 1987</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="1987">1987</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="1997">1997</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="2008">2008</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="2014">2014</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="2024">2024</button>
+          <button class="timeline-year" role="tab" aria-selected="false" aria-controls="timelinePanel" data-year="2026">2026</button>
+        </div>
+
+        <article class="timeline-panel" id="timelinePanel" role="tabpanel" tabindex="0">
+          <div class="timeline-panel-year" id="timelinePanelYear">Pre-1987</div>
+          <div class="timeline-panel-copy">
+            <p class="timeline-kicker" id="timelineKicker">Before DBFL</p>
+            <h3 id="timelineTitle">The practice that came before</h3>
+            <p id="timelineText">Paddy Darling, Ronald Battye, Paul Forde and Jim Lawler were junior partners in Stanislaus Kenny &amp; Partners from the early 1980s.</p>
+            <div class="timeline-archive" id="timelineArchive">Major work included the £40 million Wheatfield works and prison contract, one of the country’s largest projects at the time.</div>
+          </div>
+          <div class="timeline-image-placeholder" id="timelineImage" aria-label="Archive image placeholder">
+            <span id="timelineImageLabel">55 Merrion Square</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="office-journey section" id="offices">
+      <div class="office-copy reveal">
+        <p class="eyebrow dark">A National Practice</p>
+        <h2>One firm. Four locations.</h2>
+        <p class="body-copy">DBFL’s national footprint grew from Dublin to Waterford, Cork and Galway while the company retained the accessible, hands-on culture established by its founders.</p>
+        <ol class="office-milestones">
+          <li class="is-active"><strong>1987</strong><span>Dublin</span></li>
+          <li><strong>2008</strong><span>Waterford</span></li>
+          <li><strong>2019</strong><span>Cork</span></li>
+          <li><strong>2024</strong><span>Galway</span></li>
+        </ol>
+      </div>
+      <img class="office-map reveal" src="assets/images/ireland-offices-map.svg" alt="Map showing DBFL offices in Dublin, Waterford, Cork and Galway">
+    </section>
+
+    <section class="archive-section section" aria-labelledby="archiveTitle">
+      <div class="section-heading reveal"><p class="eyebrow dark">From the Archive</p><h2 id="archiveTitle">The places behind the practice.</h2></div>
+      <div class="archive-reel" tabindex="0">
+        <figure><img src="assets/images/office-merrion-square.jpg" alt="55 Merrion Square"><figcaption><strong>1987</strong>55 Merrion Square</figcaption></figure>
+        <figure><img src="assets/images/office-holles-street.jpg" alt="Holles Street"><figcaption><strong>1988</strong>Holles Street</figcaption></figure>
+        <figure><img src="assets/images/office-herbert-house.jpg" alt="Herbert House, Harmony Row"><figcaption><strong>2004</strong>Herbert House, Harmony Row</figcaption></figure>
+        <figure><img src="assets/images/office-ormond-house.jpg" alt="Ormond House"><figcaption><strong>2015</strong>Ormond House</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="projects section dark-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Landmark Projects</p>
+        <h2>Engineering that moves communities forward.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal"><img src="assets/images/project-alto-vetro.jpg" alt="Alto Vetro residential tower"><div><span>Residential</span><h3>Alto Vetro</h3><p>Dublin’s first residential tower and a milestone in DBFL’s expanding portfolio.</p></div></article>
+        <article class="project-card reveal"><img src="assets/images/project-criminal-courts.png" alt="Criminal Courts of Justice"><div><span>Civic and Justice</span><h3>Criminal Courts of Justice</h3><p>A prominent civic project reflecting the practice’s growing structural expertise.</p></div></article>
+        <article class="project-card reveal"><img src="assets/images/project-national-concert-hall.png" alt="National Concert Hall"><div><span>Culture</span><h3>National Concert Hall</h3><p>Engineering work supporting one of Ireland’s leading cultural institutions.</p></div></article>
+      </div>
+    </section>
+
+    <section class="people section" id="people">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">The People Behind DBFL</p>
+        <h2>Forty years shaped by expertise and collaboration.</h2>
+      </div>
+      <div class="principles-grid reveal">
+        <article><span>01</span><h3>Win work</h3><p>Each partner took responsibility for finding clients and building trusted relationships.</p></article>
+        <article><span>02</span><h3>Stay accessible</h3><p>Clients received direct access to experienced leaders and practical advice.</p></article>
+        <article><span>03</span><h3>Share responsibility</h3><p>Experienced input remained close to every project and every client.</p></article>
+        <article><span>04</span><h3>Keep evolving</h3><p>The practice adapted its disciplines, locations and services as Ireland changed.</p></article>
+      </div>
+    </section>
+
+    <section class="future section" id="future">
+      <div class="future-image"></div>
+      <div class="future-content reveal">
+        <img src="assets/logos/dbfl-40-white.svg" alt="DBFL 40 Years">
+        <p class="eyebrow">Looking Forward</p>
+        <h2>The next forty years start here.</h2>
+        <p>Innovation, sustainability and the next generation of engineering talent will shape DBFL’s next chapter.</p>
+        <a class="button" href="#home">Back to Top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logos/dbfl-40-white.svg" alt="DBFL 40 Years">
+    <p>DBFL 40 Years — concept microsite for internal review.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
