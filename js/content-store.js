@@ -12,7 +12,7 @@ const DBFL_DEFAULT_CONTENT = {
     }
   ],
   news: [
-    {id:'news-40-years',title:'DBFL prepares to celebrate 40 years',category:'Featured',date:'2026-09-21',excerpt:'A new digital anniversary experience brings together the people, projects and milestones that shaped DBFL.',body:'DBFL is preparing to mark four decades of engineering, collaboration and progress. The anniversary experience will share verified milestones, archive photography and stories from across the practice.',image:'assets/images/founders-1987.png',status:'published'},
+    {id:'news-40-years',title:'DBFL prepares to celebrate 40 years',category:'Featured',date:'2026-09-21',excerpt:'A new digital anniversary experience brings together the people, projects and milestones that shaped DBFL.',body:'DBFL is preparing to mark four decades of engineering, collaboration and progress. The anniversary experience will share verified milestones, archive photography and stories from across the practice.',image:'assets/images/founders-1987.jpg',status:'published'},
     {id:'news-national',title:'One firm across four locations',category:'News',date:'2026-09-18',excerpt:'DBFL’s national footprint connects teams in Dublin, Waterford, Cork and Galway.',body:'The four-office network helps DBFL remain close to clients and projects across Ireland while working as one connected practice.',image:'assets/images/ireland-offices-map.svg',status:'published'}
   ],
   media: []
