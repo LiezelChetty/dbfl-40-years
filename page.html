@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DBFL Page</title><link rel="stylesheet" href="css/dbfl-site.css"></head><body><header class="dbfl-header"><a href="dbfl.html"><img src="assets/logos/dbfl-40-white.svg" alt="DBFL"></a><nav class="dbfl-nav"><a href="page.html?slug=about-us">About Us</a><a href="page.html?slug=what-we-do">What We Do</a><a href="projects.html">Projects</a><a href="news.html">News</a><a class="editor-link" href="admin.html">Open Editor</a></nav></header><main id="pageRoot"></main><footer class="dbfl-footer"><img src="assets/logos/dbfl-40-white.svg" alt="DBFL"><p>DBFL website concept for internal review.</p></footer><script src="js/content-store.js"></script><script>const slug=new URLSearchParams(location.search).get('slug')||'about-us';const data=DBFLContent.load();const page=data.pages.find(p=>p.slug===slug&&p.status==='published');const root=document.getElementById('pageRoot');if(!page){root.innerHTML='<section class="page-hero"><p class="kicker">Page not found</p><h1>This page is not published.</h1></section>';}else{document.title=page.title+' | DBFL';root.innerHTML=`<section class="page-hero"><p class="kicker">${DBFLContent.escape(page.eyebrow)}</p><h1>${DBFLContent.escape(page.title)}</h1></section><div class="article-wrap"><article class="article-body"><p class="lead">${DBFLContent.escape(page.intro)}</p>${page.body}</article><aside class="article-aside"><p class="kicker">Explore DBFL</p>${data.pages.filter(p=>p.status==='published').map(p=>`<a href="page.html?slug=${encodeURIComponent(p.slug)}">${DBFLContent.escape(p.title)}</a>`).join('')}<a href="index.html">40 Years</a></aside></div>`}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DBFL Page</title>
+  <link rel="stylesheet" href="css/dbfl-site.css">
+</head>
+<body>
+  <header class="dbfl-header">
+    <a href="dbfl.html"><img src="assets/logos/dbfl-40-white.svg" alt="DBFL"></a>
+    <nav class="dbfl-nav"><a href="page.html?slug=about-us">About Us</a><a href="page.html?slug=what-we-do">What We Do</a><a href="projects.html">Projects</a><a href="news.html">News</a><a class="editor-link" href="admin.html">Open Editor</a></nav>
+  </header>
+  <main id="pageRoot"></main>
+  <footer class="dbfl-footer"><img src="assets/logos/dbfl-40-white.svg" alt="DBFL"><p>DBFL website concept for internal review.</p></footer>
+  <script src="js/content-store.js"></script>
+  <script src="js/team-directory.js"></script>
+  <script>
+    const slug=new URLSearchParams(location.search).get('slug')||'about-us';
+    const data=DBFLContent.load();
+    const page=data.pages.find(p=>p.slug===slug&&p.status==='published');
+    const root=document.getElementById('pageRoot');
+    if(!page){
+      root.innerHTML='<section class="page-hero"><p class="kicker">Page not found</p><h1>This page is not published.</h1></section>';
+    }else{
+      document.title=page.title+' | DBFL';
+      root.innerHTML=`<section class="page-hero"><p class="kicker">${DBFLContent.escape(page.eyebrow)}</p><h1>${DBFLContent.escape(page.title)}</h1></section><div class="article-wrap"><article class="article-body"><p class="lead">${DBFLContent.escape(page.intro)}</p>${page.body}</article><aside class="article-aside"><p class="kicker">Explore DBFL</p>${data.pages.filter(p=>p.status==='published').map(p=>`<a href="page.html?slug=${encodeURIComponent(p.slug)}">${DBFLContent.escape(p.title)}</a>`).join('')}<a href="index.html">40 Years</a></aside></div>`;
+      if(slug==='our-team'&&window.DBFLTeam) window.DBFLTeam.render();
+    }
+  </script>
+</body>
+</html>
