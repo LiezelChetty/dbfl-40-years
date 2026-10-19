@@ -116,7 +116,7 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 .office-milestones{list-style:none;margin:44px 0 0;padding:0;border-left:2px solid #ccd2d5}
 .office-milestones li{position:relative;display:grid;grid-template-columns:90px 1fr;align-items:center;min-height:64px;padding-left:28px;color:#879198;transition:.35s}
 .office-milestones li:before{content:"";position:absolute;left:-8px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #aab2b6;transition:.35s}
-.office-milestones li.is-active{color:var(--charcoal);transform:translateX(8px)}
+.office-milestones li.is-active{color:var(--charcoal);transform:none;background:rgba(241,90,36,.045)}
 .office-milestones li.is-active:before{background:var(--orange);border-color:var(--orange);box-shadow:0 0 0 7px rgba(241,90,36,.12)}
 .office-milestones strong{color:var(--orange);font-size:14px}.office-milestones span{font-size:22px;font-weight:700}
 .archive-section{overflow:hidden}.archive-reel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,32vw);gap:20px;overflow-x:auto;padding:0 0 26px;scroll-snap-type:x mandatory;scrollbar-color:var(--orange) #e4e7e9}
@@ -175,7 +175,7 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 .office-map-pin.is-active{background:var(--orange);box-shadow:0 0 0 9px rgba(241,90,36,.2),0 0 0 18px rgba(241,90,36,.08);animation:officePulse 1.8s ease-out infinite}
 .pin-dublin{left:69%;top:53%}.pin-waterford{left:64%;top:66%}.pin-cork{left:53%;top:81%}.pin-galway{left:31%;top:57%}
 .office-milestones li{cursor:pointer}
-.office-milestones li:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
+.office-milestones li:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:2px}
 .office-milestones li.is-active span{color:var(--charcoal)}
 .office-milestones li.is-active strong{font-weight:800}
 @keyframes officePulse{0%{box-shadow:0 0 0 0 rgba(241,90,36,.28)}70%{box-shadow:0 0 0 12px rgba(241,90,36,0),0 0 0 21px rgba(241,90,36,0)}100%{box-shadow:0 0 0 0 rgba(241,90,36,0)}}
