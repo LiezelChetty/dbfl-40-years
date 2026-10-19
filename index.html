@@ -164,14 +164,20 @@
         <p class="eyebrow dark">A National Practice</p>
         <h2>One firm. Four locations.</h2>
         <p class="body-copy">DBFL’s national footprint grew from Dublin to Waterford, Cork and Galway while the company retained the accessible, hands-on culture established by its founders.</p>
-        <ol class="office-milestones">
-          <li class="is-active"><strong>1987</strong><span>Dublin</span></li>
-          <li><strong>2008</strong><span>Waterford</span></li>
-          <li><strong>2019</strong><span>Cork</span></li>
-          <li><strong>2024</strong><span>Galway</span></li>
+        <ol class="office-milestones" aria-label="Select a DBFL office">
+          <li class="is-active" tabindex="0" role="button" aria-pressed="true" data-office="dublin"><strong>1987</strong><span>Dublin</span></li>
+          <li tabindex="0" role="button" aria-pressed="false" data-office="waterford"><strong>2008</strong><span>Waterford</span></li>
+          <li tabindex="0" role="button" aria-pressed="false" data-office="cork"><strong>2019</strong><span>Cork</span></li>
+          <li tabindex="0" role="button" aria-pressed="false" data-office="galway"><strong>2024</strong><span>Galway</span></li>
         </ol>
       </div>
-      <img class="office-map reveal" src="assets/images/ireland-offices-map.svg" alt="Map showing DBFL offices in Dublin, Waterford, Cork and Galway">
+      <div class="office-map-wrap reveal" aria-label="Interactive map of DBFL offices">
+        <img class="office-map" src="assets/images/ireland-offices-map.svg" alt="Map showing DBFL offices in Dublin, Waterford, Cork and Galway">
+        <button class="office-map-pin is-active pin-dublin" type="button" data-office="dublin" aria-label="Highlight Dublin office"></button>
+        <button class="office-map-pin pin-waterford" type="button" data-office="waterford" aria-label="Highlight Waterford office"></button>
+        <button class="office-map-pin pin-cork" type="button" data-office="cork" aria-label="Highlight Cork office"></button>
+        <button class="office-map-pin pin-galway" type="button" data-office="galway" aria-label="Highlight Galway office"></button>
+      </div>
     </section>
 
     <section class="archive-section section" aria-labelledby="archiveTitle">
