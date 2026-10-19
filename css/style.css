@@ -165,8 +165,8 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 .office-map-pin .pin-label{position:absolute;left:22px;top:50%;display:block;min-width:175px;padding:13px 18px;background:#fff;border:2px solid var(--orange);border-radius:24px 0 24px 0;box-shadow:none;white-space:nowrap;color:var(--charcoal);font-size:16px;line-height:1.25;font-weight:500;letter-spacing:0;text-align:left;text-shadow:none;transform:translateY(-50%);transition:border-color .2s,box-shadow .2s}
 .office-map-pin .pin-label .pin-city{display:block;color:var(--orange);font-size:20px;font-weight:700;letter-spacing:0}
 .office-map-pin .pin-label small{display:block;margin-top:3px;color:var(--charcoal);font-size:15px;letter-spacing:0;font-weight:500}
-.pin-dublin .pin-label{left:22px;top:50%}
-.pin-waterford .pin-label{left:22px;top:-12px}
+.pin-dublin .pin-label{left:22px;top:-34px}
+.pin-waterford .pin-label{left:22px;top:34px}
 .pin-cork .pin-label{left:22px;top:38px}
 .pin-galway .pin-label{right:22px;left:auto;top:50%;text-align:right}
 .office-map-pin.is-active .pin-label{border-color:var(--orange);box-shadow:0 7px 20px rgba(20,30,36,.12)}
