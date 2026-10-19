@@ -172,7 +172,7 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 .office-map-pin.is-active .pin-label{opacity:1}
 .office-map-pin:hover,.office-map-pin:focus-visible{transform:translate(-50%,-50%) scale(1.12);outline:2px solid var(--charcoal);outline-offset:4px}
 .office-map-pin.is-active{background:var(--orange);box-shadow:0 0 0 9px rgba(241,90,36,.2),0 0 0 18px rgba(241,90,36,.08);animation:officePulse 1.8s ease-out infinite}
-.pin-dublin{left:76%;top:50%}.pin-waterford{left:66%;top:79%}.pin-cork{left:57%;top:86%}.pin-galway{left:34%;top:57%}
+.pin-dublin{left:69%;top:53%}.pin-waterford{left:64%;top:79%}.pin-cork{left:53%;top:86%}.pin-galway{left:31%;top:57%}
 .office-milestones li{cursor:pointer}
 .office-milestones li:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
 .office-milestones li.is-active span{color:var(--charcoal)}
