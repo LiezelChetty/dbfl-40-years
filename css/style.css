@@ -161,10 +161,18 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 /* Interactive office map */
 .office-map-wrap{position:relative;width:100%;align-self:center}
 .office-map-wrap .office-map{display:block;width:100%;max-height:650px;object-fit:contain;filter:drop-shadow(0 24px 34px rgba(20,30,36,.12))}
-.office-map-pin{position:absolute;z-index:3;width:27px;height:27px;border:2px solid var(--orange);border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(241,90,36,.3);transform:translate(-50%,-50%);cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
+.office-map-pin{position:absolute;z-index:3;width:24px;height:24px;padding:0;border:2px solid var(--orange);border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(241,90,36,.3);transform:translate(-50%,-50%);cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
+.office-map-pin .pin-label{position:absolute;left:18px;top:-3px;display:block;white-space:nowrap;color:var(--orange);font-size:13px;line-height:1.2;font-weight:800;letter-spacing:.01em;text-align:left;text-shadow:0 1px 0 rgba(255,255,255,.8)}
+.office-map-pin .pin-label small{display:block;margin-top:4px;color:var(--charcoal);font-size:10px;letter-spacing:.04em;font-weight:800}
+.pin-dublin .pin-label{left:18px;top:-2px}
+.pin-waterford .pin-label{left:18px;top:10px}
+.pin-cork .pin-label{left:18px;top:10px}
+.pin-galway .pin-label{right:18px;left:auto;top:10px;text-align:right}
+.office-map-pin:not(.is-active) .pin-label{opacity:.86}
+.office-map-pin.is-active .pin-label{opacity:1}
 .office-map-pin:hover,.office-map-pin:focus-visible{transform:translate(-50%,-50%) scale(1.12);outline:2px solid var(--charcoal);outline-offset:4px}
 .office-map-pin.is-active{background:var(--orange);box-shadow:0 0 0 9px rgba(241,90,36,.2),0 0 0 18px rgba(241,90,36,.08);animation:officePulse 1.8s ease-out infinite}
-.pin-dublin{left:79%;top:51%}.pin-waterford{left:63%;top:78%}.pin-cork{left:50%;top:85%}.pin-galway{left:30%;top:55%}
+.pin-dublin{left:76%;top:50%}.pin-waterford{left:66%;top:79%}.pin-cork{left:57%;top:86%}.pin-galway{left:34%;top:57%}
 .office-milestones li{cursor:pointer}
 .office-milestones li:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
 .office-milestones li.is-active span{color:var(--charcoal)}
