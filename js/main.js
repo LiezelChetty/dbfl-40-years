@@ -150,18 +150,33 @@ yearButtons.forEach((btn,index)=>{
 // This prevents the CSS fallback image from showing until the user changes tabs.
 updateTimeline('pre1987');
 
-// Animate the office journey when it enters the viewport.
-const officeItems = [...document.querySelectorAll('.office-milestones li')];
-const officeJourney = document.querySelector('.office-journey');
-if (officeJourney && officeItems.length) {
-  let officeTimer;
-  const officeObserver = new IntersectionObserver(entries => {
-    if (!entries.some(entry => entry.isIntersecting) || officeTimer) return;
-    let activeOffice = 0;
-    officeTimer = setInterval(() => {
-      officeItems.forEach((item, index) => item.classList.toggle('is-active', index === activeOffice));
-      activeOffice = (activeOffice + 1) % officeItems.length;
-    }, 1200);
-  }, { threshold: .35 });
-  officeObserver.observe(officeJourney);
+// Interactive office journey: selecting a milestone highlights its matching map pin.
+const officeItems = [...document.querySelectorAll('.office-milestones li[data-office]')];
+const officePins = [...document.querySelectorAll('.office-map-pin[data-office]')];
+function setActiveOffice(office) {
+  officeItems.forEach(item => {
+    const active = item.dataset.office === office;
+    item.classList.toggle('is-active', active);
+    item.setAttribute('aria-pressed', String(active));
+  });
+  officePins.forEach(pin => {
+    const active = pin.dataset.office === office;
+    pin.classList.toggle('is-active', active);
+    pin.setAttribute('aria-pressed', String(active));
+  });
 }
+officeItems.forEach(item => {
+  item.addEventListener('click', () => setActiveOffice(item.dataset.office));
+  item.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      setActiveOffice(item.dataset.office);
+    }
+  });
+});
+officePins.forEach(pin => pin.addEventListener('click', () => {
+  setActiveOffice(pin.dataset.office);
+  const matchingItem = officeItems.find(item => item.dataset.office === pin.dataset.office);
+  if (matchingItem) matchingItem.scrollIntoView({block:'nearest',behavior:'smooth'});
+}));
+setActiveOffice('dublin');
