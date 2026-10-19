@@ -162,18 +162,18 @@ footer{background:#182128;color:#fff;padding:34px 7vw;display:flex;align-items:c
 .office-map-wrap{position:relative;width:100%;align-self:center}
 .office-map-wrap .office-map{display:block;width:100%;max-height:650px;object-fit:contain;filter:drop-shadow(0 24px 34px rgba(20,30,36,.12))}
 .office-map-pin{position:absolute;z-index:3;width:24px;height:24px;padding:0;border:2px solid var(--orange);border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(241,90,36,.3);transform:translate(-50%,-50%);cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s}
-.office-map-pin .pin-label{position:absolute;left:22px;top:50%;display:block;min-width:175px;padding:13px 18px;background:#fff;border:4px solid var(--orange);border-radius:28px 0 28px 0;box-shadow:none;white-space:nowrap;color:var(--charcoal);font-size:16px;line-height:1.25;font-weight:500;letter-spacing:0;text-align:left;text-shadow:none;transform:translateY(-50%);transition:border-color .2s,box-shadow .2s}
+.office-map-pin .pin-label{position:absolute;left:22px;top:50%;display:block;min-width:175px;padding:13px 18px;background:#fff;border:2px solid var(--orange);border-radius:24px 0 24px 0;box-shadow:none;white-space:nowrap;color:var(--charcoal);font-size:16px;line-height:1.25;font-weight:500;letter-spacing:0;text-align:left;text-shadow:none;transform:translateY(-50%);transition:border-color .2s,box-shadow .2s}
 .office-map-pin .pin-label .pin-city{display:block;color:var(--orange);font-size:20px;font-weight:700;letter-spacing:0}
 .office-map-pin .pin-label small{display:block;margin-top:3px;color:var(--charcoal);font-size:15px;letter-spacing:0;font-weight:500}
 .pin-dublin .pin-label{left:22px;top:50%}
-.pin-waterford .pin-label{left:22px;top:50%}
-.pin-cork .pin-label{left:22px;top:50%}
+.pin-waterford .pin-label{left:22px;top:-12px}
+.pin-cork .pin-label{left:22px;top:38px}
 .pin-galway .pin-label{right:22px;left:auto;top:50%;text-align:right}
 .office-map-pin.is-active .pin-label{border-color:var(--orange);box-shadow:0 7px 20px rgba(20,30,36,.12)}
 .office-map-pin:not(.is-active) .pin-label{opacity:.94}
 .office-map-pin:hover,.office-map-pin:focus-visible{transform:translate(-50%,-50%) scale(1.12);outline:2px solid var(--charcoal);outline-offset:4px}
 .office-map-pin.is-active{background:var(--orange);box-shadow:0 0 0 9px rgba(241,90,36,.2),0 0 0 18px rgba(241,90,36,.08);animation:officePulse 1.8s ease-out infinite}
-.pin-dublin{left:69%;top:53%}.pin-waterford{left:64%;top:69%}.pin-cork{left:53%;top:78%}.pin-galway{left:31%;top:57%}
+.pin-dublin{left:69%;top:53%}.pin-waterford{left:64%;top:66%}.pin-cork{left:53%;top:81%}.pin-galway{left:31%;top:57%}
 .office-milestones li{cursor:pointer}
 .office-milestones li:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
 .office-milestones li.is-active span{color:var(--charcoal)}
