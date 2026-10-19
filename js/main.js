@@ -98,8 +98,8 @@ const timelineData = {
     title: 'Made stronger by great people',
     text: 'DBFL grew from four founders with limited resources into one of Ireland’s leading consulting engineering practices.',
     archive: 'The company has grown. The principles of accessible leadership, technical responsibility and close client relationships remain.',
-    image: 'assets/images/hero-brand-launch.jpg',
-    imageLabel: 'The people behind DBFL'
+    image: 'assets/images/dbfl-team-town-hall-2026.jpg',
+    imageLabel: 'The DBFL team at the 2026 town hall'
   }
 };
 
