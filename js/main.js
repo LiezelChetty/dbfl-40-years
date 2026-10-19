@@ -146,6 +146,10 @@ yearButtons.forEach((btn,index)=>{
   });
 });
 
+// Set the initial timeline panel from the selected tab on first load.
+// This prevents the CSS fallback image from showing until the user changes tabs.
+updateTimeline('pre1987');
+
 // Animate the office journey when it enters the viewport.
 const officeItems = [...document.querySelectorAll('.office-milestones li')];
 const officeJourney = document.querySelector('.office-journey');
